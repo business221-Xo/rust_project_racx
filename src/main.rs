@@ -16,7 +16,7 @@ fn print_flash_message (m : flash_message){
 fn print_generic < T: std::fmt::Debug + std::fmt::Display > ( value : T) {
     println! ( "Print_generic {}", value);
 }
-//fe
+
 trait Animal {
     fn sound(&self) -> &str;
     fn name(&self) -> &str;
