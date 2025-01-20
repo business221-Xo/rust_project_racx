@@ -4,6 +4,7 @@ enum flash_message {
 }
 
 mod greetingsMod;
+mod mylib;
 
 fn print_flash_message (m : flash_message){
     match m {
@@ -118,6 +119,10 @@ fn main() {
 
     greetings::sayHello();
     greetingsMod::hello_import_mod();
+    mylib::hello_in_lib();
+
+
+
 }
 
 fn print_sum ( a:i8 , b:i8) {
