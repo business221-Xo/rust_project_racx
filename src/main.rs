@@ -1,3 +1,4 @@
+
 enum flash_message {
     success,
     warning { category : i32, message: String},
@@ -5,6 +6,10 @@ enum flash_message {
 
 mod greetingsMod;
 mod mylib;
+
+fn assert_test () -> &'static str {
+    "Hello, this is assert_test."
+}
 
 fn print_flash_message (m : flash_message){
     match m {
@@ -56,6 +61,7 @@ impl Animal for Cat {
         &self.name
     }
 }
+
 
 fn main() {
 
@@ -121,6 +127,8 @@ fn main() {
     greetingsMod::hello_import_mod();
     mylib::hello_in_lib();
 
+    assert_eq!(assert_test(), "Hello, this is assert_test.");
+    dependancy::dependancy_hello();
 
 
 }
