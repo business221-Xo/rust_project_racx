@@ -15,7 +15,7 @@ fn print_flash_message (m : flash_message){
     match m {
         flash_message::success => println!("Success"),
         flash_message::warning { category, message } =>
-        println!("This is warning {} {}", category, message),    
+        println!("This is warning :  {} {}", category, message),    
     }
 }
 
