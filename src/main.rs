@@ -11,8 +11,8 @@ fn assert_test () -> &'static str {
     "Hello, this is assert_test."
 }
 
-fn print_flash_message (m : flash_message){
-    match m {
+fn print_flash_message (mo : flash_message){
+    match mo {
         flash_message::success => println!("Success"),
         flash_message::warning { category, message } =>
         println!("This is warning :  {} {}", category, message),    
