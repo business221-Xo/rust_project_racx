@@ -9,7 +9,7 @@ mod mylib;
 
 fn assert_test () -> &'static str {
     "Hello, this is assert_test."
-// This is test assert.
+
 }
 
 fn print_flash_message (mo : flash_message){
